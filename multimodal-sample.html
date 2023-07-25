@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Study Audio-Only Chart Renderings</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px;
+        }
+        img {
+            max-width: var(--image-size, 300px); /* Configurable image size */
+        }
+        .chart-heading {
+            font-size: 24px;
+        }
+        .chart-paragraph {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="chart-heading" contenteditable="true">IMAGE Multimodal Study Audio-Only Chart Renderings</h3>
+        <p class="chart-paragraph" contenteditable="true">(best played using headphones with spatial audio capability)</p>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="img-2.jpg" alt="Image 1">
+            <div class="audio-container">
+                <audio controls>
+                    <source src="covid.json.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="img-1.jpg" alt="Image 2">
+            <div class="audio-container">
+                <audio controls>
+                    <source src="delta-airlines.json.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
